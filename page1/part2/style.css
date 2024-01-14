@@ -1,0 +1,399 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  z-index: -1;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+header {
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  height: 110px;
+  width: 100%;
+  padding: 0px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+header div {
+  flex: 1 1 120px;
+
+  margin: 1.5rem;
+}
+
+header div img {
+  width: 134.3px;
+  height: 65px;
+
+  transition: 0.7s;
+}
+header div img:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+header nav {
+  flex: 1 1 300px;
+
+  margin: 1.75rem;
+}
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+header nav ul li {
+  padding: 0.8rem 1.2rem;
+}
+header nav ul li a {
+  color: gray;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+  flex: 1 1 20px;
+}
+header nav ul li a:hover {
+  color: rgb(26, 216, 211);
+}
+header nav ul li img {
+  width: 40%;
+  flex: 1 1 20px;
+  transition: 0.7s;
+}
+header nav ul li img:hover {
+  transform: scale(1.2);
+}
+section {
+  position: relative;
+  top: 110px;
+}
+section div.middle {
+  height: 800px;
+  background-color: black;
+  margin: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+#five div {
+  position: relative;
+  top: 30%;
+  transform: translate(0, -50%);
+  font-size: 30px;
+  color: white;
+  line-height: 200%;
+  letter-spacing: 5px;
+}
+#one div {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 30px;
+  color: white;
+  line-height: 200%;
+  letter-spacing: 5px;
+}
+section div.bottom {
+  height: 200px;
+}
+p.a {
+  font-size: 60px;
+}
+p.a:hover {
+  transform: rotate(-5deg);
+}
+#five {
+  background-image: url(./images/key-visual.jpg);
+  background-size: cover;
+}
+#one {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url(./images/second-img.jpg);
+  background-size: cover;
+}
+#one button {
+  background-color: transparent;
+  font-size: 30px;
+  border: 2px solid rgb(26, 216, 211);
+  width: 10%;
+  margin: 25px;
+  border-radius: 8px;
+  color: rgb(26, 216, 211);
+  transition: 1s;
+}
+#one button:hover {
+  padding: 5px;
+  width: 11%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#two {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url(./images/third-img.jpg);
+  background-size: cover;
+}
+#two button {
+  background-color: transparent;
+  font-size: 20px;
+  border: 2px solid rgb(26, 216, 211);
+  width: 15%;
+  margin: 25px;
+  border-radius: 8px;
+  color: rgb(26, 216, 211);
+  transition: 1s;
+  padding: 5px;
+}
+#two button:hover {
+  padding: 7px;
+  width: 17%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+div.middle_two {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.middle_two p {
+  flex: 1;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 3rem;
+}
+div.middle_two button {
+  flex: 1;
+}
+#three {
+  background-image: url(./images/15.jpg);
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.three_one {
+  flex: 0 0 400px;
+  padding: 150px 10px 200px 10px;
+
+  margin-right: 50px;
+  background-image: url(./images/FE_white.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.three_one_one {
+  flex: 0;
+}
+.three_one div {
+  margin-top: 50px;
+}
+.three_one p {
+  line-height: 35px;
+}
+.three_one p.blue {
+  color: rgb(26, 216, 211);
+}
+
+.three_one button {
+  flex: 0;
+  margin-top: 50px;
+  font-size: 20px;
+  border: 6px solid rgb(26, 216, 211);
+  width: 30%;
+  background-color: rgb(26, 216, 211);
+  border-radius: 8px;
+  color: white;
+
+  padding: 5px;
+}
+.three_one button:hover {
+  color: rgba(225, 225, 225, 0.7);
+  cursor: pointer;
+}
+.three_one_one img {
+  height: 60%;
+}
+.three_two {
+  flex: 0 0 400px;
+  padding: 150px 10px 200px 10px;
+
+  margin-left: 50px;
+  background-image: url(./images/FE_white.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.three_two_one {
+  flex: 0;
+}
+.three_two div {
+  margin-top: 50px;
+}
+.three_two_one img {
+  height: 60%;
+}
+.three_two p {
+  line-height: 35px;
+}
+.three_two p.blue {
+  color: rgb(26, 216, 211);
+}
+.three_two button {
+  flex: 0;
+  margin-top: 50px;
+  font-size: 20px;
+  border: 6px solid rgb(26, 216, 211);
+  width: 30%;
+  background-color: rgb(26, 216, 211);
+  border-radius: 8px;
+  color: white;
+
+  padding: 5px;
+}
+.three_two button:hover {
+  color: rgba(225, 225, 225, 0.7);
+  cursor: pointer;
+}
+#four {
+  background-image: url(./images/five-img.jpg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.four {
+  position: absolute;
+  top: 450px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
+.fouro {
+  position: absolute;
+  top: 510px;
+  width: 50%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  line-height: 30px;
+}
+.bottom {
+  position: relative;
+  height: 80px;
+}
+.bottom1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+}
+.bottom1 img {
+  width: 100%;
+}
+.bottom1 img:hover {
+  cursor: pointer;
+}
+footer {
+  background-color: rgb(235, 235, 235);
+  position: relative;
+  top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  margin-bottom: 20px;
+  border: white 10px solid;
+  color: rgb(123, 123, 123);
+}
+footer div {
+  flex: 0 0 200px;
+  text-align: center;
+}
+
+div.foot1 {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  display: inline-block;
+}
+div.foot1 img {
+  width: 100%;
+}
+div.foot1 img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+div.foot2 {
+  width: 30px;
+  height: 30px;
+
+  display: inline-block;
+}
+div.foot2 img {
+  width: 100%;
+}
+div.foot2 img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+hr.hr2 {
+  width: 20px;
+  border: 1px solid white;
+  margin: 10px;
+  text-align: center;
+}
+hr.hr1 {
+  width: 60px;
+  border: 1px solid rgb(26, 216, 211);
+  margin: 30px;
+  text-align: center;
+}
+aside div {
+  position: fixed;
+  bottom: 100px;
+  right: 0px;
+  width: 80px;
+  height: 80px;
+  z-index: 5;
+}
+aside div img {
+  width: 100%;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 2s;
+}
+aside div img:hover {
+  opacity: 0.5;
+
+  transform: translateY(-30px);
+}
+span {
+  margin: 8px;
+}
