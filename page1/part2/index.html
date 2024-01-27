@@ -9,11 +9,29 @@
         scroll-behavior: smooth;
       }
     </style> 
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
       <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" href="./style.css" />
- 
+    <link rel="stylesheet" href="./loading.css" />
   </head>
   <body>
+    <div class="loading-wrapper">
+      <div style="color:rgb(26, 216, 211)" class="loading la-square-jelly-box la-2x">
+          <div></div>
+          <div></div>
+      </div>
+  </div>
+  <div class="click">
+  <div class="search">
+    <div class="search-word">SEARCH</div>
+    <div class="search-box">
+      <input type="text" placeholder="Type here..." /><img
+        src="./images/microphone.svg"
+        alt=""
+      /><img src="./images/FE_search_green.png" alt="" />
+    </div>
+  </div>
+</div>
     <header>
       <div>
         <img src="./images/FE_logo-4.png" />
@@ -23,10 +41,11 @@
           <li><a href="#">探索</a></li>
           <li><a href="#">技能樹</a></li>
           <li><a href="#">登入</a></li>
-          <li><img src="./images/FE_search_green.png" alt="" /></li>
+          <li><img id="mySearch" src="./images/FE_search_green.png" alt="" /></li>
         </ul>
       </nav>
     </header>
+ 
     <aside>
       <div><img src="./images/FE_test_go.png" alt=""></div>
     </aside>
@@ -63,11 +82,27 @@
 
       <div class="bottom"><div class="bottom1"><a href="#top"><img src="./images/FE_TOP.png" alt="" /></a></div></div>
     </section>
+    
     <footer>
       <div>聯絡</div>
       <div><span style="color:rgb(26, 216, 211) ;">M  </span> 0917-218-567</div>
       <div><span style="color:rgb(26, 216, 211) ;">E  </span> aaa24295234@gmail.com</div>
-      <div class="footimg"><div class="foot1"><img src="./images/aac5e-uklfe-removebg-preview.png" alt=""></div><div class="foot2"><img src="./images/FE_line.png" alt=""></div></div>
+      <div class="footimg"><div class="foot1"> <a href="https://www.facebook.com/?locale=zh_TW"><img src="./images/aac5e-uklfe-removebg-preview.png" alt=""></a></div><div class="foot2"> <a href="https://line.me/tw/"><img src="./images/FE_line.png" alt=""></a> </div></div>
     </footer>
+<script>
+ $(document).ready(function () {
+  setTimeout(function () {
+    $(".loading-wrapper").fadeOut(500);
+  }, 1000);
+});
+</script>
+<script>
+  let myClick = document.querySelector("div.click")
+  let mySearch = document.querySelector("#mySearch");
+  mySearch.addEventListener("click", () =>{
+    
+    myClick.classList.toggle("click");
+  });
+</script>
   </body>
 </html>

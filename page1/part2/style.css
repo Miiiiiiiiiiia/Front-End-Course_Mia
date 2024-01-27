@@ -72,7 +72,11 @@ header nav ul li img {
 }
 header nav ul li img:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
+/* header nav ul li img:active ~ div.click {
+  display: block;
+} */
 section {
   position: relative;
   top: 110px;
@@ -396,4 +400,47 @@ aside div img:hover {
 }
 span {
   margin: 8px;
+}
+/* @media screen and (max-width: 650px) {
+  body header nav {
+    font-size: 0.5rem;
+    padding: 0.8rem 0.2rem;
+  }
+} */
+div.click {
+  display: none;
+}
+
+div.search {
+  z-index: 50;
+  position: fixed;
+  top: 110px;
+  height: 300px;
+  width: 100%;
+  background-color: rgb(224, 224, 224);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+div.search-word {
+  color: rgb(26, 216, 211);
+  font-size: 20px;
+  margin: 50px 0px 20px 0px;
+}
+div.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: white;
+  width: 50%;
+  border-radius: 20px;
+}
+div.search-box input {
+  width: 75%;
+  height: 65%;
+}
+div.search-box img {
+  width: 25px;
 }
