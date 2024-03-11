@@ -9,20 +9,22 @@
         scroll-behavior: smooth;
       }
     </style> 
-    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  
       <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./loading.css" />
+    <script src="script.js"></script>
+   
   </head>
   <body>
-    <div class="loading-wrapper">
-      <div style="color:rgb(26, 216, 211)" class="loading la-square-jelly-box la-2x">
-          <div></div>
-          <div></div>
-      </div>
-  </div>
+
+    
+        <div class="loadingPicture">
+          <img src="./images/FE_logo-4.png" alt="">
+        </div>
+      
+
   <div class="searchbtn">
-    <div class="blackback"></div>
   <div class="search">
     <div class="search-word">SEARCH</div>
     <div class="search-box">
@@ -31,7 +33,9 @@
         alt=""
       /><img src="./images/FE_search_green.png" alt="" />
     </div>
+      
   </div>
+<div class="blackback"></div>
 </div>
     <header>
       <div>
@@ -60,7 +64,7 @@
       </div>
 
       <div class="middle" id="one">
-        <div><p ></p>想知道自己適合什麼學習環境嗎？</p>
+        <div><p>想知道自己適合什麼學習環境嗎？</p>
 
           <p>可以點擊按鈕測測看哦！</p><button>測驗GO</button></div>
       </div>
@@ -90,13 +94,7 @@
       <div><span style="color:rgb(26, 216, 211) ;">E  </span> aaa24295234@gmail.com</div>
       <div class="footimg"><div class="foot1"> <a href="https://www.facebook.com/?locale=zh_TW"><img src="./images/aac5e-uklfe-removebg-preview.png" alt=""></a></div><div class="foot2"> <a href="https://line.me/tw/"><img src="./images/FE_line.png" alt=""></a> </div></div>
     </footer>
-<script>
- $(document).ready(function () {
-  setTimeout(function () {
-    $(".loading-wrapper").fadeOut(500);
-  }, 1000);
-});
-</script>
+
 <script>
   let myClick = document.querySelector("div.searchbtn")
   let mySearch = document.querySelector("#mySearch");
