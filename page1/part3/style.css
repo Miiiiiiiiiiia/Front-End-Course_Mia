@@ -31,7 +31,35 @@ h6 {
   animation-direction: alternate;
   animation-delay: 0.5s;
 }
+.loading_bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: red;
+  animation-name: loading_effect_bottom, loading_effect;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0.5s;
+  z-index: 100;
+}
 .loadingPicture img {
+  animation-name: changeColor;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  z-index: 100;
+}
+@keyframes changeColor {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 @keyframes loading_effect {
   0% {
@@ -42,6 +70,27 @@ h6 {
   100% {
     /* background-color: red; */
     bottom: 100%;
+  }
+}
+@keyframes loading_effect_bottom {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: orange;
+  }
+  40% {
+    background-color: yellow;
+  }
+  60% {
+    background-color: green;
+  }
+  80% {
+    background-color: blue;
+  }
+
+  100% {
+    background-color: black;
   }
 }
 
@@ -72,6 +121,7 @@ header div img {
 header div img:hover {
   transform: scale(1.2);
   opacity: 0.5;
+  cursor: pointer;
 }
 header nav {
   flex: 1 1 300px;
@@ -112,14 +162,14 @@ section {
   position: relative;
   top: 110px;
 }
-section div.middle {
+section div.section__paragraph {
   height: 800px;
   background-color: black;
   margin: 10px;
   overflow: hidden;
   text-align: center;
 }
-#five div {
+#section__paragraphone div {
   position: relative;
   top: 30%;
   transform: translate(0, -50%);
@@ -128,7 +178,7 @@ section div.middle {
   line-height: 200%;
   letter-spacing: 5px;
 }
-#one div {
+#section__paragraphTwo div {
   position: relative;
   top: 50%;
   transform: translate(0, -50%);
@@ -140,22 +190,22 @@ section div.middle {
 section div.bottom {
   height: 200px;
 }
-p.a {
+p.section__paragraph--slide {
   font-size: 60px;
 }
-p.a:hover {
+p.section__paragraph--slide:hover {
   transform: rotate(-5deg);
 }
-#five {
+#section__paragraphone {
   background-image: url(./images/key-visual.jpg);
   background-size: cover;
 }
-#one {
+#section__paragraphTwo {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url(./images/second-img.jpg);
   background-size: cover;
 }
-#one button {
+#section__paragraphTwo button {
   background-color: transparent;
   font-size: 30px;
   border: 2px solid rgb(26, 216, 211);
@@ -165,18 +215,18 @@ p.a:hover {
   color: rgb(26, 216, 211);
   transition: 1s;
 }
-#one button:hover {
+#section__paragraphTwo button:hover {
   padding: 5px;
   width: 11%;
   border-radius: 8px;
   cursor: pointer;
 }
-#two {
+#section__paragraphThree {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url(./images/third-img.jpg);
   background-size: cover;
 }
-#two button {
+#section__paragraphThree button {
   background-color: transparent;
   font-size: 20px;
   border: 2px solid rgb(26, 216, 211);
@@ -187,13 +237,13 @@ p.a:hover {
   transition: 1s;
   padding: 5px;
 }
-#two button:hover {
+#section__paragraphThree button:hover {
   padding: 7px;
   width: 17%;
   border-radius: 8px;
   cursor: pointer;
 }
-div.middle_two {
+div.section__paragraphThree--font {
   position: relative;
   top: 10rem;
   display: flex;
@@ -202,23 +252,23 @@ div.middle_two {
   justify-content: center;
   align-items: center;
 }
-div.middle_two p {
+div.section__paragraphThree--font p {
   flex: 1;
   font-size: 30px;
   color: white;
   margin-bottom: 3rem;
 }
-div.middle_two button {
+div.section__paragraphThree--font button {
   flex: 1;
 }
-#three {
+#section__paragraphFour {
   background-image: url(./images/15.jpg);
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.three_one {
+.section__paragraphFour__left {
   flex: 0 0 400px;
   padding: 150px 10px 200px 10px;
 
@@ -234,20 +284,20 @@ div.middle_two button {
   justify-content: flex-start;
   align-items: center;
 }
-.three_one_one {
+.section__paragraphFour__left--img {
   flex: 0;
 }
-.three_one div {
+.section__paragraphFour__left div {
   margin-top: 50px;
 }
-.three_one p {
+.section__paragraphFour__left p {
   line-height: 35px;
 }
-.three_one p.blue {
+.section__paragraphFour__left p.blue {
   color: rgb(26, 216, 211);
 }
 
-.three_one button {
+.section__paragraphFour__left button {
   flex: 0;
   margin-top: 50px;
   font-size: 20px;
@@ -259,14 +309,14 @@ div.middle_two button {
 
   padding: 5px;
 }
-.three_one button:hover {
+.section__paragraphFour__left button:hover {
   color: rgba(225, 225, 225, 0.7);
   cursor: pointer;
 }
-.three_one_one img {
+.section__paragraphFour__left--img img {
   height: 60%;
 }
-.three_two {
+.section__paragraphFour__right {
   flex: 0 0 400px;
   padding: 150px 10px 200px 10px;
 
@@ -282,22 +332,22 @@ div.middle_two button {
   justify-content: flex-start;
   align-items: center;
 }
-.three_two_one {
+.section__paragraphFour__right--img {
   flex: 0;
 }
-.three_two div {
+.section__paragraphFour__right div {
   margin-top: 50px;
 }
-.three_two_one img {
+.section__paragraphFour__right--img img {
   height: 60%;
 }
-.three_two p {
+.section__paragraphFour__right p {
   line-height: 35px;
 }
-.three_two p.blue {
+.section__paragraphFour__right p.blue {
   color: rgb(26, 216, 211);
 }
-.three_two button {
+.section__paragraphFour__right button {
   flex: 0;
   margin-top: 50px;
   font-size: 20px;
@@ -309,11 +359,11 @@ div.middle_two button {
 
   padding: 5px;
 }
-.three_two button:hover {
+.section__paragraphFour__right button:hover {
   color: rgba(225, 225, 225, 0.7);
   cursor: pointer;
 }
-#four {
+#section__paragraphFive {
   background-image: url(./images/five-img.jpg);
   background-size: cover;
   position: relative;
@@ -321,14 +371,14 @@ div.middle_two button {
   justify-content: center;
   align-items: center;
 }
-.four {
+.section__paragraphFive {
   position: absolute;
   top: 450px;
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 25px;
 }
-.fouro {
+.section__paragraphFive--word {
   position: absolute;
   top: 510px;
   width: 50%;
@@ -337,11 +387,11 @@ div.middle_two button {
   font-size: 18px;
   line-height: 30px;
 }
-.bottom {
+.section__paragraphBottom {
   position: relative;
   height: 80px;
 }
-.bottom1 {
+.section__paragraphBottom--link {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -349,11 +399,13 @@ div.middle_two button {
   width: 40px;
   height: 40px;
 }
-.bottom1 img {
+.section__paragraphBottom--link img {
   width: 100%;
+  transition: 0.8s;
 }
-.bottom1 img:hover {
+.section__paragraphBottom--link img:hover {
   cursor: pointer;
+  scale: 1.1;
 }
 footer {
   background-color: rgb(235, 235, 235);
@@ -372,29 +424,29 @@ footer div {
   text-align: center;
 }
 
-div.foot1 {
+div.footer__link--facebook {
   width: 30px;
   height: 30px;
   margin-right: 5px;
   display: inline-block;
 }
-div.foot1 img {
+div.footer__link--facebook img {
   width: 100%;
 }
-div.foot1 img:hover {
+div.footer__link--facebook img:hover {
   cursor: pointer;
   opacity: 0.7;
 }
-div.foot2 {
+div.footer__link--line {
   width: 30px;
   height: 30px;
 
   display: inline-block;
 }
-div.foot2 img {
+div.footer__link--line img {
   width: 100%;
 }
-div.foot2 img:hover {
+div.footer__link--line img:hover {
   cursor: pointer;
   opacity: 0.7;
 }
