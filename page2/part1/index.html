@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>前端轉職資訊</title>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style> 
+  
+      <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./loading.css" />
+    <script src="script.js"></script>
+   
+  </head>
+  <body>
+
+    
+        <div class="loadingPicture">
+          <img src="./images/FE_logo-4-removebg-preview.png" alt="">
+          <div class="loading_bottom"></div>
+        </div>
+      
+
+  <div class="searchBtn">
+  <div class="search">
+    <div class="search-word">SEARCH</div>
+    <div class="search-box">
+      <input type="text"  /><img
+        src="./images/microphone.svg"
+        alt=""
+      /><img src="./images/FE_search_green.png" alt="" />
+    </div>
+      
+  </div>
+<div class="blackback"></div>
+</div>
+    <header>
+      <div>
+        <img src="./images/FE_logo-4.png" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">探索</a></li>
+          <li><a href="#">技能樹</a></li>
+          <li><a href="#">登入</a></li>
+          <li><img id="mySearch" src="./images/FE_search_green.png" alt="" /></li>
+        </ul>
+      </nav>
+    </header>
+ 
+    <aside>
+      <div><img src="./images/FE_test_go.png" alt=""></div>
+    </aside>
+    <section>
+      <div class="section__paragraph" id="section__paragraphone">
+        <div>
+          <p class="section__paragraph--slide">FRONT-ENTER</p>
+          <p>前端轉職資訊</p>
+          
+        </div>
+      </div>
+
+      <div class="section__paragraph" id="section__paragraphTwo">
+        <div><p>想知道自己適合什麼學習環境嗎？</p>
+
+          <p>可以點擊按鈕測測看哦！</p><button>測驗GO</button></div>
+      </div>
+      <div class="section__paragraph" id="section__paragraphThree">
+        <div class="section__paragraphThree--font"><p>教室精選</p><button>AppWorks School</button><button>彭彭的課程教學</button><button>五倍紅寶石</button></div>
+      </div>
+      <div class="section__paragraph" id="section__paragraphFour">
+        <div class="section__paragraphFour__findSchool"><div class="section__paragraphFour__findSchool--img"><img src="./images/FE_pen.png" alt=""></div><p style="font-size: 30px;" class="blue">探索<hr class="hr1"></p><p style="font-size: 20px;">我們提供公正的資訊，<br>
+          幫您順利轉職，<br>
+          並追蹤最新的業界動態。</p><button>找學校</button></div>
+        <div class="section__paragraphFour__skillTree"><div class="section__paragraphFour__skillTree--img"><img src="./images/FE_pen.png" alt=""></div><p style="font-size: 30px;" class="blue">技能樹<hr class="hr1"></p><p style="font-size: 20px;">前端包含哪些技術？<br>
+          你又學會了哪些？<br>
+          趕緊點進來試試看。</p><button>技能樹</button></div>
+      </div>
+      <div class="section__paragraph" id="section__paragraphFive">
+        <div class="section__paragraphFive">關於<hr class="hr2"></div><div class="section__paragraphFive--word">近年來，社會對於軟體工程師的需求急速增加，全台各地的補習也如雨後春筍般開業， 然而人的時間有限，要如何找到適合自己的學習環境？
+
+          <br><br>「Front-Enter」特別針對前端工程的學習資源，進行蒐集、分類， 期待讓有志成為前端工程師的人，找到最適合自己的學習環境。</div>
+      </div>
+
+      <div class="section__paragraphBottom"><div class="section__paragraphBottom--link"><a href="#top"><img src="./images/FE_TOP.png" alt="" /></a></div></div>
+    </section>
+    
+    <footer>
+      <div>聯絡</div>
+      <div><span style="color:rgb(26, 216, 211) ;">M  </span> 0917-218-567</div>
+      <div><span style="color:rgb(26, 216, 211) ;">E  </span> aaa24295234@gmail.com</div>
+      <div class="footer__img"><div class="footer__link--facebook"> <a href="https://www.facebook.com/?locale=zh_TW"><img src="./images/aac5e-uklfe-removebg-preview.png" alt=""></a></div><div class="footer__link--line"> <a href="https://line.me/tw/"><img src="./images/FE_line.png" alt=""></a> </div></div>
+    </footer>
+
+<script>
+  let myClick = document.querySelector("div.searchBtn");
+  let mySearch = document.querySelector("#mySearch");
+  let blackback = document.querySelector("div.blackback");
+  mySearch.addEventListener("click", () =>{
+    
+    myClick.classList.toggle("searchBtn");
+
+  });
+  blackback.addEventListener("click", () =>{
+    
+    myClick.classList.toggle("searchBtn");
+    
+  });
+</script>
+  </body>
+</html>
