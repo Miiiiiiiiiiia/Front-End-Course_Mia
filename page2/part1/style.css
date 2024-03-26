@@ -541,7 +541,7 @@ div.search-box img {
   margin-left: 0.5rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 630px) {
   header {
     margin-left: 0;
     padding-left: 0%;
@@ -618,7 +618,7 @@ div.search-box img {
     text-align: left;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
   header {
     height: 150px;
   }
