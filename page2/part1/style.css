@@ -268,7 +268,7 @@ div.section__paragraphThree--font button {
   flex-wrap: wrap;
   justify-content: center;
 }
-.section__paragraphFour__left {
+.section__paragraphFour__findSchool {
   flex: 0 0 400px;
   padding: 150px 10px 200px 10px;
 
@@ -284,20 +284,20 @@ div.section__paragraphThree--font button {
   justify-content: flex-start;
   align-items: center;
 }
-.section__paragraphFour__left--img {
+.section__paragraphFour__findSchool--img {
   flex: 0;
 }
-.section__paragraphFour__left div {
+.section__paragraphFour__findSchool div {
   margin-top: 50px;
 }
-.section__paragraphFour__left p {
+.section__paragraphFour__findSchool p {
   line-height: 35px;
 }
-.section__paragraphFour__left p.blue {
+.section__paragraphFour__findSchool p.blue {
   color: rgb(26, 216, 211);
 }
 
-.section__paragraphFour__left button {
+.section__paragraphFour__findSchool button {
   flex: 0;
   margin-top: 50px;
   font-size: 20px;
@@ -309,14 +309,14 @@ div.section__paragraphThree--font button {
 
   padding: 5px;
 }
-.section__paragraphFour__left button:hover {
+.section__paragraphFour__findSchool button:hover {
   color: rgba(225, 225, 225, 0.7);
   cursor: pointer;
 }
-.section__paragraphFour__left--img img {
+.section__paragraphFour__findSchool--img img {
   height: 60%;
 }
-.section__paragraphFour__right {
+.section__paragraphFour__skillTree {
   flex: 0 0 400px;
   padding: 150px 10px 200px 10px;
 
@@ -332,22 +332,22 @@ div.section__paragraphThree--font button {
   justify-content: flex-start;
   align-items: center;
 }
-.section__paragraphFour__right--img {
+.section__paragraphFour__skillTree--img {
   flex: 0;
 }
-.section__paragraphFour__right div {
+.section__paragraphFour__skillTree div {
   margin-top: 50px;
 }
-.section__paragraphFour__right--img img {
+.section__paragraphFour__skillTree--img img {
   height: 60%;
 }
-.section__paragraphFour__right p {
+.section__paragraphFour__skillTree p {
   line-height: 35px;
 }
-.section__paragraphFour__right p.blue {
+.section__paragraphFour__skillTree p.blue {
   color: rgb(26, 216, 211);
 }
-.section__paragraphFour__right button {
+.section__paragraphFour__skillTree button {
   flex: 0;
   margin-top: 50px;
   font-size: 20px;
@@ -359,7 +359,7 @@ div.section__paragraphThree--font button {
 
   padding: 5px;
 }
-.section__paragraphFour__right button:hover {
+.section__paragraphFour__skillTree button:hover {
   color: rgba(225, 225, 225, 0.7);
   cursor: pointer;
 }
@@ -490,7 +490,7 @@ span {
     padding: 0.8rem 0.2rem;
   }
 } */
-div.searchbtn {
+div.searchBtn {
   display: none;
 }
 
@@ -578,8 +578,8 @@ div.search-box img {
   #section__paragraphFour {
     flex-direction: row;
   }
-  .section__paragraphFour__left,
-  .section__paragraphFour__right {
+  .section__paragraphFour__findSchool,
+  .section__paragraphFour__skillTree {
     padding-top: 5px;
     padding-bottom: 5px;
     scale: 0.8;
@@ -587,18 +587,18 @@ div.search-box img {
     margin: 5px;
     height: 400px;
   }
-  .section__paragraphFour__left div,
-  .section__paragraphFour__right div {
+  .section__paragraphFour__findSchool div,
+  .section__paragraphFour__skillTree div {
     margin-top: 15px;
     padding-top: 10px;
   }
-  .section__paragraphFour__left button,
-  .section__paragraphFour__right button {
+  .section__paragraphFour__findSchool button,
+  .section__paragraphFour__skillTree button {
     margin-top: 5px;
   }
 
-  .section__paragraphFour__right--img img,
-  .section__paragraphFour__left--img img {
+  .section__paragraphFour__skillTree--img img,
+  .section__paragraphFour__findSchool--img img {
     height: 50%;
   }
   .section__paragraphFive {
