@@ -124,7 +124,7 @@ header div img:hover {
   cursor: pointer;
 }
 header nav {
-  flex: 1 1 300px;
+  /* flex: 1 1 300px; */
 
   margin: 1.5rem;
 }
@@ -148,7 +148,7 @@ header nav ul li a:hover {
 }
 header nav ul li img {
   width: 40%;
-  flex: 1 1 20px;
+  /* flex: 1 1 20px; */
   transition: 0.7s;
 }
 header nav ul li img:hover {
@@ -540,21 +540,49 @@ div.search-box img {
   width: 25px;
   margin-left: 0.5rem;
 }
+@media screen and (max-width: 974px) {
+  #section__paragraphFour {
+    flex-direction: row;
+  }
+  .section__paragraphFour__findSchool,
+  .section__paragraphFour__skillTree {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    scale: 0.8;
+    padding: 5px;
+    margin: 5px;
+    height: 400px;
+  }
+  .section__paragraphFour__findSchool div,
+  .section__paragraphFour__skillTree div {
+    margin-top: 15px;
+    padding-top: 10px;
+  }
+  .section__paragraphFour__findSchool button,
+  .section__paragraphFour__skillTree button {
+    margin-top: 5px;
+  }
 
-@media screen and (max-width: 630px) {
+  .section__paragraphFour__skillTree--img img,
+  .section__paragraphFour__findSchool--img img {
+    height: 50%;
+  }
+}
+@media screen and (max-width: 684px) {
   header {
     margin-left: 0;
     padding-left: 0%;
   }
   header div {
     margin: 0px 0px 0px 10px;
-    flex: 1 1 20px;
+    /* flex: 1 1 20px; */
   }
   header nav {
-    flex: 0 0 20px;
     margin: 0px;
   }
-
+  nav ul li img {
+    width: 16px;
+  }
   header img {
     scale: 0.8;
   }
@@ -562,6 +590,8 @@ div.search-box img {
     scale: 0.8;
   }
   nav {
+    position: absolute;
+    right: 0px;
     margin-right: 0rem;
     margin-left: 0rem;
   }
@@ -618,22 +648,89 @@ div.search-box img {
     text-align: left;
   }
 }
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 470px) {
   header {
-    height: 150px;
-  }
-  header nav {
-    width: 200px;
-    flex: none;
-    margin-top: 50px;
-    text-align: center;
+    margin-left: 0;
+    padding-left: 0%;
   }
   header div {
-    width: 10px;
-    flex: none;
-    /* margin: 1.5rem; */
+    margin: 0px 0px 0px 10px;
+    /* flex: 1 1 20px; */
   }
-  header div img {
+  header nav {
+    margin: 0px;
+  }
+
+  header img {
     scale: 0.8;
+  }
+  nav ul {
+    scale: 0.8;
+    margin: 5px;
+    padding: 0;
+  }
+  nav {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  header nav ul li {
+    padding: 0.8rem 0.8rem;
+    position: relative;
+    left: 70px;
+  }
+  nav ul li img {
+    width: 100%;
+  }
+  #section__paragraphTwo button {
+    width: 20%;
+  }
+  #section__paragraphTwo div {
+    font-size: 20px;
+  }
+
+  #section__paragraphThree button {
+    width: 30%;
+  }
+  #section__paragraphFour {
+    flex-direction: row;
+  }
+  .section__paragraphFour__findSchool,
+  .section__paragraphFour__skillTree {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    scale: 0.8;
+    padding: 5px;
+    margin: 5px;
+    height: 400px;
+  }
+  .section__paragraphFour__findSchool div,
+  .section__paragraphFour__skillTree div {
+    margin-top: 15px;
+    padding-top: 10px;
+  }
+  .section__paragraphFour__findSchool button,
+  .section__paragraphFour__skillTree button {
+    margin-top: 5px;
+  }
+
+  .section__paragraphFour__skillTree--img img,
+  .section__paragraphFour__findSchool--img img {
+    height: 50%;
+  }
+  .section__paragraphFive {
+    top: 130px;
+  }
+  .section__paragraphFive--word {
+    top: 200px;
+  }
+  footer {
+    height: 230px;
+    background-color: rgb(233, 233, 233);
+    flex-direction: column;
+    display: block;
+  }
+  footer div {
+    margin: 20px;
+    text-align: left;
   }
 }
