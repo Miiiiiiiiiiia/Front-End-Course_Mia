@@ -209,7 +209,7 @@ p.section__paragraph--slide:hover {
   background-color: transparent;
   font-size: 30px;
   border: 2px solid rgb(26, 216, 211);
-  width: 10%;
+  width: 20%;
   margin: 25px;
   border-radius: 8px;
   color: rgb(26, 216, 211);
@@ -292,9 +292,11 @@ div.section__paragraphThree--font button {
 }
 .section__paragraphFour__findSchool p {
   line-height: 35px;
+  font-size: 30px;
 }
 .section__paragraphFour__findSchool p.blue {
   color: rgb(26, 216, 211);
+  font-size: 30px;
 }
 
 .section__paragraphFour__findSchool button {
@@ -342,10 +344,12 @@ div.section__paragraphThree--font button {
   height: 60%;
 }
 .section__paragraphFour__skillTree p {
+  font-size: 30px;
   line-height: 35px;
 }
 .section__paragraphFour__skillTree p.blue {
   color: rgb(26, 216, 211);
+  font-size: 30px;
 }
 .section__paragraphFour__skillTree button {
   flex: 0;
@@ -420,7 +424,7 @@ footer {
   color: rgb(123, 123, 123);
 }
 footer div {
-  flex: 0 0 200px;
+  /* flex: 0 0 200px; */
   text-align: center;
 }
 
@@ -540,7 +544,21 @@ div.search-box img {
   width: 25px;
   margin-left: 0.5rem;
 }
-@media screen and (max-width: 974px) {
+@media screen and (max-width: 1140px) {
+  #section__paragraphTwo button {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 936px) {
+  .section__paragraphFour__findSchool,
+  .section__paragraphFour__skillTree {
+    padding: 150px 5px 200px 5px;
+    margin-right: 5px;
+    flex: 0 0 350px;
+  }
+}
+
+@media screen and (max-width: 797px) {
   #section__paragraphFour {
     flex-direction: row;
   }
@@ -548,7 +566,7 @@ div.search-box img {
   .section__paragraphFour__skillTree {
     padding-top: 5px;
     padding-bottom: 5px;
-    scale: 0.8;
+
     padding: 5px;
     margin: 5px;
     height: 400px;
@@ -568,7 +586,7 @@ div.search-box img {
     height: 50%;
   }
 }
-@media screen and (max-width: 684px) {
+@media screen and (max-width: 746px) {
   header {
     margin-left: 0;
     padding-left: 0%;
@@ -597,6 +615,7 @@ div.search-box img {
   }
   #section__paragraphTwo button {
     width: 20%;
+    font-size: 20px;
   }
   #section__paragraphTwo div {
     font-size: 20px;
@@ -612,7 +631,7 @@ div.search-box img {
   .section__paragraphFour__skillTree {
     padding-top: 5px;
     padding-bottom: 5px;
-    scale: 0.8;
+    /* scale: 0.8; */
     padding: 5px;
     margin: 5px;
     height: 400px;
@@ -631,6 +650,12 @@ div.search-box img {
   .section__paragraphFour__findSchool--img img {
     height: 50%;
   }
+  hr.hr1 {
+    margin: 20px;
+  }
+  .section__paragraphFour__skillTree p {
+  }
+
   .section__paragraphFive {
     top: 130px;
   }
@@ -683,6 +708,7 @@ div.search-box img {
   }
   #section__paragraphTwo button {
     width: 20%;
+    font-size: 15px;
   }
   #section__paragraphTwo div {
     font-size: 20px;
@@ -698,7 +724,7 @@ div.search-box img {
   .section__paragraphFour__skillTree {
     padding-top: 5px;
     padding-bottom: 5px;
-    scale: 0.8;
+    /* scale: 0.8; */
     padding: 5px;
     margin: 5px;
     height: 400px;
