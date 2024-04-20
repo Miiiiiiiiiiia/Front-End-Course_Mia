@@ -100,14 +100,14 @@ header {
   top: 0px;
   height: 110px;
   width: 100%;
-  padding: 0px 40px;
+  /* padding: 0px 40px; */
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: flex-end;
   background-color: rgba(255, 255, 255, 0.7);
 }
 header div {
-  flex: 1 1 120px;
+  flex: 100px;
 
   margin: 1.5rem;
 }
@@ -124,7 +124,7 @@ header div img:hover {
   cursor: pointer;
 }
 header nav {
-  /* flex: 1 1 300px; */
+  flex: 300px;
 
   margin: 1.5rem;
 }
@@ -134,20 +134,20 @@ header nav ul {
   list-style-type: none;
 }
 header nav ul li {
-  padding: 0.8rem 1.2rem;
+  padding: 0.8rem 0.8rem;
 }
 header nav ul li a {
   color: gray;
   text-decoration: none;
   font-size: 1.25rem;
   transition: all 0.3s ease;
-  flex: 1 1 20px;
+  /* flex: 1 1 20px; */
 }
 header nav ul li a:hover {
   color: rgb(26, 216, 211);
 }
 header nav ul li img {
-  width: 40%;
+  width: 20px;
   /* flex: 1 1 20px; */
   transition: 0.7s;
 }
@@ -587,32 +587,37 @@ div.search-box img {
   }
 }
 @media screen and (max-width: 746px) {
-  header {
+  /* header {
     margin-left: 0;
     padding-left: 0%;
   }
-  header div {
+  header div img {
     margin: 0px 0px 0px 10px;
-    /* flex: 1 1 20px; */
-  }
+    position: relative;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%); */
+  /* flex: 1 1 20px; */
+  /* }
   header nav {
     margin: 0px;
   }
   nav ul li img {
     width: 16px;
   }
-  header img {
-    scale: 0.8;
-  }
-  nav ul {
-    scale: 0.8;
+
+  nav {
+    position: relative;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
   }
   nav {
     position: absolute;
     right: 0px;
     margin-right: 0rem;
     margin-left: 0rem;
-  }
+  } */
   #section__paragraphTwo button {
     width: 20%;
     font-size: 20px;
@@ -674,14 +679,14 @@ div.search-box img {
   }
 }
 @media screen and (max-width: 470px) {
-  header {
+  /* header {
     margin-left: 0;
     padding-left: 0%;
   }
   header div {
-    margin: 0px 0px 0px 10px;
-    /* flex: 1 1 20px; */
-  }
+    margin: 0px 0px 0px 10px; */
+  /* flex: 1 1 20px; */
+  /* }
   header nav {
     margin: 0px;
   }
@@ -701,11 +706,11 @@ div.search-box img {
   header nav ul li {
     padding: 0.8rem 0.8rem;
     position: relative;
-    left: 70px;
+    left: 10%;
   }
   nav ul li img {
     width: 100%;
-  }
+  } */
   #section__paragraphTwo button {
     width: 20%;
     font-size: 15px;
@@ -758,5 +763,10 @@ div.search-box img {
   footer div {
     margin: 20px;
     text-align: left;
+  }
+}
+@media screen and (max-width: 419px) {
+  header nav ul li {
+    padding: 0.8rem 0.3rem;
   }
 }
