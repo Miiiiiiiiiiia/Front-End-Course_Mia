@@ -179,12 +179,13 @@ testClick1.addEventListener("click", () =>{
   // let testBtn1 = document.querySelector("div.testBtn1")
   let testBtn2 = document.querySelector("div.testBtn2")
   let test2 = document.querySelector(.test2)
-  testClick2.forEach( addEventListener("click", () =>{
-    testBtn1.classList.add("testBtn1");
-    testBtn2.classList.toggle("testBtn2");
-    // testBtn2.classList.toggle("test2");
-  }))
- 
+  testClick2.forEach((t1)=>{
+    t1.addEventListener("click",() =>{
+
+testBtn1.classList.add("testBtn1");
+
+      testBtn2.classList.toggle("testBtn2");});
+  });
   
   </script>
 
