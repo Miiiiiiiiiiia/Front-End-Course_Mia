@@ -707,6 +707,259 @@ div.testBtn2 {
   display: none;
   /* z-index: -2; */
 }
+
+div.test3 {
+  height: 400px;
+  width: 300px;
+  background-color: rgb(26, 216, 211);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+
+  flex-direction: column;
+  color: white;
+  z-index: 120;
+}
+div.test3 h3 {
+  position: relative;
+  top: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+div.test3 p {
+  font-size: 16px;
+  /* padding: px; */
+  position: relative;
+  top: 55px;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+div.test3 button {
+  position: relative;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 10px 0px;
+  display: block;
+  border: 0px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(26, 216, 211);
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 150px;
+}
+div.test3 button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+div.testBtn3 {
+  display: none;
+  /* z-index: -2; */
+}
+
+div.test4 {
+  height: 400px;
+  width: 300px;
+  background-color: rgb(26, 216, 211);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+
+  flex-direction: column;
+  color: white;
+  z-index: 120;
+}
+div.test4 h3 {
+  position: relative;
+  top: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+div.test4 p {
+  font-size: 16px;
+  /* padding: px; */
+  position: relative;
+  top: 55px;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+div.test4 button {
+  position: relative;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 10px 0px;
+  display: block;
+  border: 0px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(26, 216, 211);
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 150px;
+}
+div.test4 button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+div.testBtn4 {
+  display: none;
+  /* z-index: -2; */
+}
+
+div.test5 {
+  height: 400px;
+  width: 300px;
+  background-color: rgb(26, 216, 211);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+
+  flex-direction: column;
+  color: white;
+  z-index: 120;
+}
+div.test5 h3 {
+  position: relative;
+  top: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+div.test5 p {
+  font-size: 16px;
+  /* padding: px; */
+  position: relative;
+  top: 55px;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+div.test5 button {
+  position: relative;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 10px 0px;
+  display: block;
+  border: 0px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(26, 216, 211);
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 150px;
+}
+div.test5 button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+div.testBtn5 {
+  display: none;
+  /* z-index: -2; */
+}
+div.test6 {
+  height: 400px;
+  width: 300px;
+  background-color: rgb(26, 216, 211);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+
+  flex-direction: column;
+  color: white;
+  z-index: 120;
+}
+div.test6 h3 {
+  position: relative;
+  top: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+div.test6 p {
+  font-size: 16px;
+  /* padding: px; */
+  position: relative;
+  top: 55px;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+div.test6 button {
+  position: relative;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 10px 0px;
+  display: block;
+  border: 0px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(26, 216, 211);
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 150px;
+}
+div.test6 button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+div.testBtn6 {
+  display: none;
+  /* z-index: -2; */
+}
+/* .hidden {
+  display: none;
+} */
+/* cc */
+/* 隐藏元素的样式 */
+
+/* 加载动画样式 */
+/* .loading-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.circle {
+  border: 8px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 8px solid #ffffff;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
 @media screen and (max-width: 1140px) {
   #section__paragraphTwo button {
     width: 20%;
@@ -821,8 +1074,8 @@ div.testBtn2 {
   hr.hr1 {
     margin: 20px;
   }
-  .section__paragraphFour__skillTree p {
-  }
+  /* .section__paragraphFour__skillTree p {
+  } */
 
   .section__paragraphFive {
     top: 130px;
