@@ -53,13 +53,56 @@
   <div class="test2">
     <h3>每個月能撥出多少費用學習？</h3>
     <p>2/5</p>
-    <button>3000元以下</button>
-    <button>6000元內</button>
-    <button>10000元內</button>
-    <button>10001元以上</button>
-    <button>不重要</button>
+    <button class="t2">3000元以下</button>
+    <button class="t2">6000元內</button>
+    <button class="t2">10000元內</button>
+    <button class="t2">10001元以上</button>
+    <button class="t2">不重要</button>
   </div>
 </div>
+
+<div class="testBtn3">
+  <div class="test3">
+    <h3>每周能撥出多少時間學習？</h3>
+    <p>3/5</p>
+    <button class="t3">16小時以下</button>
+    <button class="t3">30小時內</button>
+    <button class="t3">45小時內</button>
+    <button class="t3">46小時以上</button>
+    <button class="t3">不重要</button>
+  </div>
+</div>
+
+<div class="testBtn4">
+  <div class="test4">
+    <h3>對班制的需求是？</h3>
+    <p>4/5</p>
+    <button class="t4">大班制</button>
+    <button class="t4">小班制</button>
+    <button class="t4">一對一</button>
+    <button class="t4">不重要</button>
+  </div>
+</div>
+
+
+<div class="testBtn5">
+  <div class="test5">
+    <h3>喜歡什麼樣的教學方式？</h3>
+    <p>5/5</p>
+    <button class="t5">放養制</button>
+    <button class="t5">手把手教制</button>
+    <button class="t5">不重要</button>
+  </div>
+</div>
+
+
+<div class="testBtn6">
+<div id="test6" class="test6 ">
+  <h3>最適合您的學校</h3>
+  <p id="suggestedResult"><button class="t6">AppWorks School</button></p> <!-- 不知道麼透過js進動態修改:( -->
+</div>
+</div>
+
 
   <div class="searchBtn">
   <div class="search">
@@ -125,6 +168,10 @@
       <div class="section__paragraphBottom"><div class="section__paragraphBottom--link"><a href="#top"><img src="./images/FE_TOP.png" alt="" /></a></div></div>
     </section>
     
+
+
+
+
     <footer>
       <div>聯絡</div>
       <div><span style="color:rgb(26, 216, 211) ;">M  </span> 0917-218-567</div>
@@ -132,62 +179,117 @@
       <div class="footer__img"><div class="footer__link--facebook"> <a href="https://www.facebook.com/?locale=zh_TW"><img src="./images/aac5e-uklfe-removebg-preview.png" alt=""></a></div><div class="footer__link--line"> <a href="https://line.me/tw/"><img src="./images/FE_line.png" alt=""></a> </div></div>
     </footer>
 
-<script>
-  let myClick = document.querySelector("div.searchBtn");
-  let mySearch = document.querySelector("#mySearch");
-  let blackback = document.querySelector("div.blackback");
-  mySearch.addEventListener("click", () =>{
-    
-    myClick.classList.toggle("searchBtn");
-    
-  });
-  blackback.addEventListener("click", () =>{
-    
-    myClick.classList.toggle("searchBtn");
-    
-  });
-</script>
-<script>
-  let testClick = document.querySelector("div.section__paragraph button")
-  let testBtn = document.querySelector("div.testBtn")
-  let greyback = document.querySelector("div.greyback");
-testClick.addEventListener("click", () =>{
-  testBtn.classList.toggle("testBtn");
-  // testBtn.classList.remove("testBtn2");
-})
-greyback.addEventListener("click", () =>{
-    
-  testBtn.classList.toggle("testBtn");
-    
-  });
-</script>
 
 
-<script>
-let testClick1 = document.querySelector("div.test button ")
-let testBtn1 = document.querySelector("div.testBtn1")
-// let test1 = document.querySelector(.test1)
-testClick1.addEventListener("click", () =>{
-  testBtn1.classList.toggle("testBtn1");
- 
-})
 
-</script>
+    <script>
+// 以下部分的js沒有成功
+// let finalStepButtons = document.querySelectorAll(".t5");
+// let loadingCircle = document.getElementById("loadingCircle");
+// let resultSection = document.getElementById("test6");
+// let suggestedResult = document.getElementById("suggestedResult");
 
-<script>
-  let testClick2 = document.querySelectorAll(".t1")
-  // let testBtn1 = document.querySelector("div.testBtn1")
-  let testBtn2 = document.querySelector("div.testBtn2")
-  let test2 = document.querySelector(.test2)
-  testClick2.forEach((t1)=>{
-    t1.addEventListener("click",() =>{
 
-testBtn1.classList.add("testBtn1");
+// const results = [
+//   "AppWorks School",
+//   "彭彭的課程教學",
+//   "五倍紅寶石",
+//   "不建議轉職，請多考慮"
+// ];
 
-      testBtn2.classList.toggle("testBtn2");});
-  });
+
+// finalStepButtons.forEach((t5) => {
+//   t5.addEventListener("click", () => {
+
+//     document.querySelector(".testBtn5").classList.add("hidden");
+
+
+//     loadingCircle.classList.remove("hidden");
+
   
-  </script>
+//     setTimeout(() => {
+    
+//       loadingCircle.classList.add("hidden");
+
+     
+//       let randomResult = results[Math.floor(Math.random() * results.length)];
+//       suggestedResult.innerText = randomResult;
+
+     
+//       resultSection.classList.remove("hidden");
+//     }, 3000);
+//   });
+// });
+
+
+let myClick = document.querySelector("div.searchBtn");
+let mySearch = document.querySelector("#mySearch");
+let blackback = document.querySelector("div.blackback");
+mySearch.addEventListener("click", () => {
+  myClick.classList.toggle("searchBtn");
+});
+blackback.addEventListener("click", () => {
+  myClick.classList.toggle("searchBtn");
+});
+
+
+let testClick = document.querySelector("div.section__paragraph button");
+let testBtn = document.querySelector("div.testBtn");
+let greyback = document.querySelector("div.greyback");
+testClick.addEventListener("click", () => {
+  testBtn.classList.remove("testBtn");
+});
+greyback.addEventListener("click", () => {
+  testBtn.classList.add("testBtn");
+});
+
+
+let testClick1 = document.querySelector("div.test button");
+let testBtn1 = document.querySelector("div.testBtn1");
+testClick1.addEventListener("click", () => {
+  testBtn1.classList.remove("testBtn1");
+});
+
+let testClick2 = document.querySelectorAll(".t1");
+let testBtn2 = document.querySelector("div.testBtn2");
+testClick2.forEach((t1) => {
+  t1.addEventListener("click", () => {
+    testBtn2.classList.remove("testBtn2");
+  });
+});
+
+let testClick3 = document.querySelectorAll(".t2");
+let testBtn3 = document.querySelector("div.testBtn3");
+testClick3.forEach((t2) => {
+  t2.addEventListener("click", () => {
+    testBtn3.classList.remove("testBtn3");
+  });
+});
+
+let testClick4 = document.querySelectorAll(".t3");
+let testBtn4 = document.querySelector("div.testBtn4");
+testClick4.forEach((t3) => {
+  t3.addEventListener("click", () => {
+    testBtn4.classList.remove("testBtn4");
+  });
+});
+
+let testClick5 = document.querySelectorAll(".t4");
+let testBtn5 = document.querySelector("div.testBtn5");
+testClick5.forEach((t4) => {
+  t4.addEventListener("click", () => {
+    testBtn5.classList.remove("testBtn5");
+  });
+});
+
+let testClick6 = document.querySelectorAll(".t5");
+let testBtn6 = document.querySelector("div.testBtn6");
+testClick6.forEach((t5) => {
+  t5.addEventListener("click", () => {
+    testBtn6.classList.remove("testBtn6");
+  });
+});
+    </script>
 
   </body>
 </html>
